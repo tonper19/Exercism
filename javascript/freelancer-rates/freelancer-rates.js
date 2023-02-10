@@ -60,3 +60,5 @@ export function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
   const DAY_PRICE = dayRate(ratePerHour) * NUMBER_OF_DAYS;
   return Math.ceil(MONTH_PRICE + DAY_PRICE);
 }
+
+console.log(priceWithMonthlyDiscount(150, 3500, 0.01));
