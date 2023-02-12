@@ -1,0 +1,23 @@
+{
+  "name": "exercism",
+  "version": "1.0.0",
+  "description": "https://exercism.org/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonper19/Exercism.git"
+  },
+  "author": "Tony Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonper19/Exercism/issues"
+  },
+  "homepage": "https://github.com/tonper19/Exercism#readme",
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2"
+  }
+}
