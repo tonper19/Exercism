@@ -20,6 +20,15 @@
 // Good luck with that door policy!
 
 /**
+ * Capitalize the first letter of any word
+ * TODO: check for empty and 1 letter words
+ * 20230212 Tony Perez
+ */
+function capitalizeFirstLetter(word){
+  return word[0].toUpperCase() + word.substring(1).toLowerCase();
+}
+
+/**
  * Respond with the correct character, given the line of the
  * poem, if this were said at the front door.
  *
@@ -27,7 +36,7 @@
  * @returns {string}
  */
 export function frontDoorResponse(line) {
-  throw new Error('Remove this line and implement the function');
+  return line[0];
 }
 
 /**
@@ -38,7 +47,7 @@ export function frontDoorResponse(line) {
  * @returns {string} the front door password
  */
 export function frontDoorPassword(word) {
-  throw new Error('Remove this line and implement the function');
+  return capitalizeFirstLetter(word);
 }
 
 /**
@@ -49,7 +58,8 @@ export function frontDoorPassword(word) {
  * @returns {string}
  */
 export function backDoorResponse(line) {
-  throw new Error('Remove this line and implement the function');
+  const TRIMMED_LINE = line.trim();
+  return TRIMMED_LINE[TRIMMED_LINE.length - 1];
 }
 
 /**
@@ -60,5 +70,5 @@ export function backDoorResponse(line) {
  * @returns {string} the back door password
  */
 export function backDoorPassword(word) {
-  throw new Error('Remove this line and implement the function');
+  return capitalizeFirstLetter(word) + ', please';
 }
